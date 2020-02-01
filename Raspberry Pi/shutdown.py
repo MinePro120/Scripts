@@ -6,6 +6,7 @@ import os
 # connecting GPIO 26 (pin 37) to ground (e.g. pin 39) for more than 1 second
 # Simple way to run as daemon : screen -dmS shutdown python shutdown.py
 # Simple way to run at startup : edit /etc/rc.local
+# Dependency : python(3)-gpiozero
 
 stopButton = Button (26)
 
