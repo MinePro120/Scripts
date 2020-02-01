@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Script that caclulates the sha256 checksums of all the
 # files in its directory and outputs them to SHA256SUMS.txt
