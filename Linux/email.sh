@@ -9,8 +9,8 @@ password=<password>    # Your gmail password
 # Thus, be sure to take all the necessary security precautions
 # (such as denying read permission to other users and/or not 
 # leaving the password stored here after using the script)
-# Google will send you a warning about "less secure apps", which
-# option you should enable for this script to work
+# Google will send you a warning about "less secure apps", an
+# option that must be enabled for this script to work
 # Replace all the values included in "< >" (delete the "< >" symbols
 # afterwards)
 
