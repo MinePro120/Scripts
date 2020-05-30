@@ -18,7 +18,7 @@ curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd \
   --mail-from "$sender" \
   --mail-rcpt "$recipient" \
   --user "$sender:$password" \
-  -T <(echo -e "From: "$sender"\nTo: "$recipient"\nSubject: <subject>\n\n<body>") 
+  -T <(echo -e "From: "$sender"\nTo: "$recipient"\nSubject: <subject>\n<body>") 
 # <subject> and <body> are, respectively, the subject and the body of the email
 # \n denotes a new line
 exit 0
