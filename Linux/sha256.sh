@@ -6,7 +6,6 @@
 # (based on the file's directory)
 
 rm SHA256SUMS.txt > /dev/null 2>&1
-find . -type f -a ! -name 'sha256.sh' -exec sha256sum {} \; >> /tmp/SHA256SUMS.txt
+find . \( ! -regex '.*/\..*' \) -type f -a ! -name 'sha256.sh' -exec sha256sum {} \; > /tmp/SHA256SUMS.txt
 sort -k2 /tmp/SHA256SUMS.txt > SHA256SUMS.txt
-rm /tmp/SHA256SUMS.txt > /dev/null 2>&1
 exit 0
